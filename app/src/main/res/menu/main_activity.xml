@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/mainMenuGroup">
+
+        <item
+            android:id="@+id/menuNewCity"
+            android:alphabeticShortcut="N"
+            android:checkable="true"
+            android:icon="@mipmap/ic_launcher"
+            android:numericShortcut="9"
+            android:title="New City"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/menuAboutApp"
+            android:title="@string/menu_about_app" />
+
+        <item
+            android:id="@+id/menuSettings"
+            android:title="Settings">
+            <menu>
+                <item
+                    android:id="@+id/menuPhoneSettings"
+                    android:title="Phone Settings" />
+                <item
+                    android:id="@+id/menuSystemSettings"
+                    android:title="Phone Settings" />
+            </menu>
+        </item>
+    </group>
+
+    <item
+        android:id="@+id/menuExit"
+        android:title="Exit" />
+</menu>
